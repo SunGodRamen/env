@@ -1,3 +1,8 @@
 [user]
 	email = avons394@gmail.com
 	name = SunGodRamen
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status	
