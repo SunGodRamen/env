@@ -1,0 +1,14 @@
+# ignore all by default,
+.bash_history
+.cache/
+.local/
+.oh-my-zsh/
+.shell.pre-oh-my-zsh
+.ssh/
+.zcompdump-localhost-5.9
+.zcompdump-localhost-5.9.zwc
+.zsh_history
+Termux-YTD/
+bin/
+downloads/
+storage/
