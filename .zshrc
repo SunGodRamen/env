@@ -62,6 +62,8 @@ export LANG=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
+"$(ssh-agent -s)"; ssh-add ~/.ssh/SunGodRamen
+
 alias vzrc="nvim ~/.zshrc"
 alias vomz="nvim ~/.oh-my-zsh"
 alias vtpt="nvim ~/.termux/termux.properties"
@@ -70,6 +72,7 @@ alias rtst="reload-termux-settings"
 alias ..="cd .."
 alias ...="cd ../.."
 
+alias sshk="$(ssh-agent -s); ssh-add ~/.ssh/SunGodRamen"
 
 alias c="clear;pwd;ls"
 clear;pwd;ls
