@@ -72,7 +72,10 @@ alias rtst="reload-termux-settings"
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias sshk="$(ssh-agent -s); ssh-add ~/.ssh/SunGodRamen"
+sshk () {
+	eval "$(ssh-agent -s);"  
+	ssh-add ~/.ssh/SunGodRamen
+}
 
 alias c="clear;pwd;ls"
 clear;pwd;ls
