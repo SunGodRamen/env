@@ -76,4 +76,4 @@ alias sshk="$(ssh-agent -s); ssh-add ~/.ssh/SunGodRamen"
 
 alias c="clear;pwd;ls"
 clear;pwd;ls
-tmux
+$TMUX='';tmux

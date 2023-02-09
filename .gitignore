@@ -5,7 +5,6 @@
 .ssh/
 .zcompdump-*
 .zcompdump-*.zwc
-.oh-my-zsh/
 .shell.pre-oh-my-zsh
 .zsh_history
 Termux-YTD/
