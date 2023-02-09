@@ -52,9 +52,9 @@ export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
  if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='nvim'
  else
-   export EDITOR='vim'
+   export EDITOR='nano'
  fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -73,11 +73,9 @@ alias ...="cd ../.."
 sshkey () {
 	if [[ -n $1 ]]; then
     echo 'no key supplied'
-    exit 1
   fi
   eval "$(ssh-agent -s);"  
   ssh-add ~/.ssh/$1
-  exit 0
 }
 
 alias c="clear;pwd;ls"
