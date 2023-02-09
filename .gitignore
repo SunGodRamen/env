@@ -2,11 +2,11 @@
 .bash_history
 .cache/
 .local/
+.ssh/
+.zcompdump-*
+.zcompdump-*.zwc
 .oh-my-zsh/
 .shell.pre-oh-my-zsh
-.ssh/
-.zcompdump-localhost-5.9
-.zcompdump-localhost-5.9.zwc
 .zsh_history
 Termux-YTD/
 bin/
