@@ -54,7 +54,7 @@ export LANG=en_US.UTF-8
  if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='vim'
  else
-   export EDITOR='nvim'
+   export EDITOR='vim'
  fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
@@ -62,8 +62,6 @@ export LANG=en_US.UTF-8
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-"$(ssh-agent -s)"; ssh-add ~/.ssh/SunGodRamen
-
 alias vzrc="nvim ~/.zshrc"
 alias vomz="nvim ~/.oh-my-zsh"
 alias vtpt="nvim ~/.termux/termux.properties"
@@ -72,9 +70,14 @@ alias rtst="reload-termux-settings"
 alias ..="cd .."
 alias ...="cd ../.."
 
-sshk () {
-	eval "$(ssh-agent -s);"  
-	ssh-add ~/.ssh/SunGodRamen
+sshkey () {
+	if [[ -n $1 ]]; then
+    echo 'no key supplied'
+    exit 1
+  fi
+  eval "$(ssh-agent -s);"  
+  ssh-add ~/.ssh/$1
+  exit 0
 }
 
 alias c="clear;pwd;ls"
